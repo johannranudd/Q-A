@@ -54,12 +54,8 @@ main {
     font-size: 20px;
 }
 
-.hidden-text p {
-    border-top: 1px solid grey;
-}
-
-.minus-icon {
-    display: none;
+.hidden-div {
+    padding: 0;
 }
 
 /* JS */
@@ -68,6 +64,9 @@ main {
     display: none;
 }
 
+.minus-icon {
+    display: none;
+}
 
 .show-text .minus-icon {
     display: inline;
@@ -77,6 +76,8 @@ main {
     display: none;
 }
 
-.show-text .hidden-text p {
-    display: inline;
+.show-text .hidden-text {
+    display: block;
+    border-top: 1px solid grey;
+    padding-top: 20px;
 }

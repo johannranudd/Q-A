@@ -1,10 +1,20 @@
 
-const btn = document.querySelector('.buttons');
-const hiddenText = document.querySelector('.hidden-text p');
 
+const questionWrapper = document.querySelectorAll('.question-wrapper');
 
-btn.addEventListener('click', function(question) {
-  btn.classList.toggle('show-text');
-  hiddenText.classList.toggle('show-text');
-  console.log(hiddenText);
-})
+questionWrapper.forEach(function(question) {
+  const btn = question.querySelector('.buttons');
+
+  btn.addEventListener('click', function() {
+    question.classList.toggle('show-text');
+
+    questionWrapper.forEach(function(item) {
+      // console.log(item);
+
+      if (item !== question) {
+        item.classList.remove('show-text')
+      }
+
+    });
+  });
+});
