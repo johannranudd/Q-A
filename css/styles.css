@@ -54,6 +54,10 @@ main {
     font-size: 20px;
 }
 
+.hidden-text p {
+    border-top: 1px solid grey;
+}
+
 .minus-icon {
     display: none;
 }
@@ -61,39 +65,18 @@ main {
 /* JS */
 
 .hidden-text {
-    border-top: 1px solid grey;
     display: none;
 }
 
-/* .show-text {
-    display: block;
-}
-
-.show-icon {
-    display: inline;
-}
-
-.hide-icon {
-    display: none;
-} */
-
-.show-text {
-    display: block;
-}
-
-.hide-icon {
-    display: none;
-}
-
-.show-icon {
-    display: inline;
-}
-
-/* .show-text .pluss-icon {
-    display: none;
-}
 
 .show-text .minus-icon {
     display: inline;
-} */
+}
 
+.show-text .pluss-icon {
+    display: none;
+}
+
+.show-text .hidden-text p {
+    display: inline;
+}
