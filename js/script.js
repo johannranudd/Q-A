@@ -49,8 +49,6 @@
 //     });
 // });
 
-
-
 // const questionCard = document.querySelectorAll(".question-card");
 
 // questionCard.forEach(function (question) {
@@ -68,9 +66,29 @@
 //   });
 // });
 
+const questionWrapper = document.querySelectorAll(".question-wrapper");
 
+questionWrapper.forEach(function (question) {
+  const btn = question.querySelectorAll("span");
+  const hiddenText = question.querySelector(".hidden-text");
+  const minusIcon = question.querySelector(".minus-icon");
+  const plussIcon = question.querySelector(".pluss-icon");
 
-
-const questionWrapper = document.querySelectorAll('.question-wrapper');
-
-questionWrapper.forEach(function() )
+  // btn.addEventListener('click', function() {
+  //     hiddenText.classList.toggle('show-text');
+  //     plussIcon.classList.toggle('hide-icon');
+  //     minusIcon.classList.toggle('show-icon');
+  //     console.log(plussIcon);
+  //     console.log(minusIcon);
+  // })
+  if (questionWrapper !== question) {
+    question.classList.remove("show-text");
+  }
+  btn.forEach((item) => {
+    item.addEventListener("click", () => {
+      minusIcon.classList.toggle("show-icon");
+      plussIcon.classList.toggle("hide-icon");
+      hiddenText.classList.toggle("show-text");
+    });
+  });
+});

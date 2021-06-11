@@ -60,19 +60,40 @@ main {
 
 /* JS */
 
-.answer-text {
+.hidden-text {
     border-top: 1px solid grey;
     display: none;
 }
 
-.show-text .answer-text{
+/* .show-text {
     display: block;
 }
 
-.show-text .pluss-icon {
+.show-icon {
+    display: inline;
+}
+
+.hide-icon {
+    display: none;
+} */
+
+.show-text {
+    display: block;
+}
+
+.hide-icon {
+    display: none;
+}
+
+.show-icon {
+    display: inline;
+}
+
+/* .show-text .pluss-icon {
     display: none;
 }
 
 .show-text .minus-icon {
     display: inline;
-}
+} */
+
