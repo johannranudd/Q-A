@@ -1,18 +1,76 @@
-const plussIcon = document.querySelector('.pluss-icon');
-const minusIcon = document.querySelector('.minus-icon');
-const hiddenSection = document.querySelector('.hidden-section');
+// const plussIcon = document.querySelector(".pluss-icon");
+// const minusIcon = document.querySelector(".minus-icon");
+// const hiddenSection = document.querySelectorAll(".hidden-section");
+// const buttons = document.querySelectorAll(".open-card-btn");
+// const questionCard = document.querySelectorAll('.question-card')
+
+// !for loop option
+// !Todo make cards that are open close when openeing a new card
+// for (let i = 0; i < buttons.length; i++) {
+//     buttons[i].addEventListener('click', function() {
+//         hiddenSection[i].classList.toggle('show-hidden-section');
+//         plussIcon.classList.toggle('hide-icon');
+//         minusIcon.classList.toggle('show-icon');
+//     })
+// };
+
+// !forEach
+// !Todo make cards that are open close when openeing a new card
+// buttons.forEach(function (per) {
+//   per.addEventListener("click", function (e) {
+//     const answer =
+//       e.currentTarget.parentElement.nextSibling.nextSibling.nextSibling
+//         .nextSibling;
+//     answer.classList.toggle("show-hidden-section");
+//   });
+// });
+
+//!using selectors inside element
+
+// questionCard.forEach(function (questionPer) {
+//     const btn = questionPer.querySelector('.open-card-btn');
+//     const newHiddenSection = questionPer.querySelector('.hidden-section');
+//     const minusIcon = questionPer.querySelector('.minus-icon');
+//     const plussIcon = questionPer.querySelector('.pluss-icon');
+
+//     btn.addEventListener('click', function() {
+//         questionCard.forEach(function (questionPerAgain) {
+//             const anotherHiddenSection = questionPerAgain.querySelector('.hidden-section');
+//                 plussIcon.classList.toggle('hide-icon');
+//                 minusIcon.classList.toggle('show-icon');
+//             if (anotherHiddenSection !== questionPer) {
+//                 anotherHiddenSection.classList.remove('show-hidden-section')
+//             }
+
+//         });
+
+//         newHiddenSection.classList.toggle('show-hidden-section');
+
+//     });
+// });
+
+
+
+// const questionCard = document.querySelectorAll(".question-card");
+
+// questionCard.forEach(function (question) {
+//   const btn = question.querySelector(".open-card-btn");
+//   const plussIcon = question.querySelectorAll(".pluss-icon");
+//   const minusIcon = question.querySelectorAll(".minus-icon");
+//   const hiddenSection = question.querySelector(".hidden-section");
+
+//   btn.addEventListener("click", function() {
+//     hiddenSection.classList.toggle("show-hidden-section");
+//     minusIcon.classList.toggle('show-icon');
+//     if (plussIcon.classList == 'show-icon' ) {
+//         console.log('sggsgf');
+//       }
+//   });
+// });
 
 
 
 
-plussIcon.addEventListener('click', function() {
-    hiddenSection.classList.add('show-hidden-section');
-    minusIcon.classList.add('show-icon');
-    plussIcon.classList.add('hide-icon');
-})
-minusIcon.addEventListener('click', function() {
-    hiddenSection.classList.remove('show-hidden-section');
-    minusIcon.classList.remove('show-icon');
-    plussIcon.classList.remove('hide-icon');
-})
+const questionWrapper = document.querySelectorAll('.question-wrapper');
 
+questionWrapper.forEach(function() )
