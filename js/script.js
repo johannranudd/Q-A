@@ -9,10 +9,9 @@ questionWrapper.forEach(function(question) {
     question.classList.toggle('show-text');
 
     questionWrapper.forEach(function(item) {
-      // console.log(item);
 
       if (item !== question) {
-        item.classList.remove('show-text')
+        item.classList.remove('show-text');
       }
 
     });
